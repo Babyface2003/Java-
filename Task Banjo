@@ -1,0 +1,21 @@
+public class Banjo {
+
+    public static String areYouPlayingBanjo(String name) {
+        char firstLetter = name.charAt(0);
+
+        if (Character.toLowerCase(firstLetter) == 'r') {
+            return name + " plays banjo";
+        } else {
+            return name + " does not play banjo";
+        }
+    }
+
+    public static void main(String[] args) {
+        // Example usage
+        String result1 = areYouPlayingBanjo("John");
+        String result2 = areYouPlayingBanjo("Rachel");
+
+        System.out.println(result1);
+        System.out.println(result2);
+    }
+}
