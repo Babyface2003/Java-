@@ -1,0 +1,28 @@
+public class Kata {
+    // Определение статического метода с именем 'greet', который принимает две строки: 'name' и 'owner'
+    static String greet(String name, String owner) {
+        // Проверка, равны ли значения переменных 'name' и 'owner'
+        if (name.equals(owner)) {
+            // Если условие верно, возвращаем строку "Привет, босс"
+            return "Hello boss";
+        } else {
+            // Если условие не верно, возвращаем строку "Привет, гость"
+            return "Hello guest";
+        }
+    }
+
+    // Главный метод, точка входа в программу
+    public static void main(String[] args) {
+        // Пример использования:
+        // Объявление переменной 'name' типа String и присвоение ей значения "John"
+        String name = "John";
+        // Объявление переменной 'owner' типа String и присвоение ей значения "John"
+        String owner = "John";
+
+        // Вызов метода 'greet' с значениями переменных 'name' и 'owner', и сохранение результата в переменной 'greeting'
+        String greeting = greet(name, owner);
+
+        // Вывод результата на консоль
+        System.out.println(greeting);
+    }
+}
